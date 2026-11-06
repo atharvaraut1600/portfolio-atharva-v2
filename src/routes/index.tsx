@@ -3,7 +3,7 @@ import { useState } from "react";
 import { projects } from "@/lib/projects";
 import { Recommender } from "@/components/Recommender";
 import resume from "@/assets/resume.pdf.asset.json";
-import portrait from "@/assets/portrait.jpg.asset.json";
+import portrait from "@/assets/Professional Office Headshot with Warm Lighting.png";
 
 const title = "Atharva Sanjay Raut — Business Intelligence & Marketing Analytics";
 const desc = "Bridging business, technology & marketing through data. BI & analytics professional pursuing an MMS in Marketing.";
@@ -77,7 +77,7 @@ function Index() {
             </div>
           </div>
           <div className="relative mx-auto w-72 md:w-80">
-            <img src={portrait.url} alt="Atharva Sanjay Raut" className="float aspect-[4/5] w-full rounded-2xl border border-border object-cover" />
+            <img src={portrait} alt="Atharva Sanjay Raut" className="float aspect-[4/5] w-full rounded-2xl border border-border object-cover" />
             {["Data", "Business", "Technology", "Marketing", "Customers"].map((t, i) => (
               <span key={t} className="absolute rounded-full border border-primary/40 bg-card/90 px-3 py-1 text-xs text-primary backdrop-blur" style={{ top: `${8 + i * 20}%`, [i % 2 ? "right" : "left"]: "-14%" }}>{t}</span>
             ))}
